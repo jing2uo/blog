@@ -63,10 +63,15 @@ theme = ["github.com/hugo-sid/hugo-blog-awesome"]
     url = '/reading/'
     weight = 30
   [[Languages.zh-cn.menu.main]]
+    pageRef="projects"
+    name = '玩具'
+    url = '/projects/'
+    weight = 40
+  [[Languages.zh-cn.menu.main]]
     pageRef="about"
     name = '关于'
     url = '/about/'
-    weight = 0
+    weight = 50
 
 [Languages.zh-cn.params]
   defaultColor = "dark" # set color mode: dark, light, auto
