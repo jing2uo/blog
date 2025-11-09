@@ -1,4 +1,4 @@
-title = "看书流水帐"
+title = "流水帐"
 baseURL = 'https://guojing.io/'
 
 # This is what goes in <html lang="">
@@ -41,7 +41,7 @@ theme = ["github.com/hugo-sid/hugo-blog-awesome"]
 [Languages.zh-cn]
   languageName = "Chinese"
   languageCode = "zh-cn"
-  contentDir = "content/zh"
+  contentDir = "content"
   weight = 1
 
   [Languages.zh-cn.menu]
@@ -54,22 +54,25 @@ theme = ["github.com/hugo-sid/hugo-blog-awesome"]
     weight = 10
   [[Languages.zh-cn.menu.main]]
     pageRef="posts"
-    name = '文章'
+    name = '日常'
     url = '/posts/'
     weight = 20
-  #[[Languages.zh-cn.menu.main]]
-  #  pageRef="about"
-  #  name = '关于'
-  #  url = '/about/'
-  #  weight = 0
+  [[Languages.zh-cn.menu.main]]
+    pageRef="reading"
+    name = '书单'
+    url = '/reading/'
+    weight = 30
+  [[Languages.zh-cn.menu.main]]
+    pageRef="about"
+    name = '关于'
+    url = '/about/'
+    weight = 0
 
 [Languages.zh-cn.params]
-  sitename = "Awesome hugo blog"
   defaultColor = "dark" # set color mode: dark, light, auto
   # Setting it to 'auto' applies the color scheme based on the visitor's device color preference.If you don't specify anything, ignore this parameter, or leave it blank,
   # the default value is set to 'auto'.
   # You can take a look at layouts/index.html for more information.
-  description = "支持亮色和暗色模式的极简 Hugo 博客主题"
   mainSections = ['posts']
   toc = false # set to false to disable table of contents 'globally'
   tocOpen = false # set to true to open table of contents by default
@@ -89,9 +92,8 @@ theme = ["github.com/hugo-sid/hugo-blog-awesome"]
 [Languages.zh-cn.params.author]
   avatar = "avatar.jpg" # put the file in assets folder; also ensure that image has same height and width
   # Note: image is not rendered if the resource(avatar image) is not found. No error is displayed.
-  intro = "看书流水帐"
+  intro = "流水帐"
   name = "guojing.io"
-  description = ""
 
 # Allow to override webmanifest options
 [Languages.zh-cn.params.webmanifest]
